@@ -22,7 +22,7 @@ with h = 1/n
 Therefore solving the ODE can be done by evaluating u' and u'' in xi, and replacing by the discretization defined above.
 Since U*0* = u(0) = alpha and U*n*= u(1) = beta, therefore those values are known and therefore only *n-1* equations for i in [1,2,...n-1]
 Those equations will give rise to a system, and as such solving the ODE is similar solving a matrix equation of the form 
-> AU = F
+- AU = F
 
 ## Information to run the code
 The code should be run on matlab. 
