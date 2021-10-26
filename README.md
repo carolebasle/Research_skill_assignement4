@@ -9,10 +9,13 @@ The number **epsilon* is known as the *Peclet Number and is relevant in the stud
 
 ## How the code works 
 The idea of the code is to discretize the interval [0,1] into n+1 points, with x0 = 0 and xn = 1, 
-and then find the solution u(x) by extrapolating its value at each pointssuch that the vectors U = [U*0*,U*1*,..,U*n*]=[u(x0),...,u(xn)] and F = [F*0*,F*1*,..,F*n*]=[f(x0),...,f(xn)]can be defined
+and then find the solution u(x) by extrapolating its value at each points such that the following vectors can be defined:
+- U = [U*0*,U*1*,..,U*n*]=[u(x0),...,u(xn)] 
+- F = [F*0*,F*1*,..,F*n*]=[f(x0),...,f(xn)]
 
 The basis of the finite difference method is that the first and second derivative can be approximated as:
 > u'(x*i*) = (U*i+1* - U*i-1*)/2h 
+
 > u''(x*i*) = (U*i+1* - 2U*i* + U*i-1*)/(h^2)
 with h = 1/n
 
